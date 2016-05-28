@@ -15,7 +15,7 @@
                             expand: true, cwd: 'src/bower_components', filter: 'isFile', src: [
                                 'angular/angular.js',
                                 'angular-route/angular-route.js'
-                            ], dest: 'build/lib'
+                            ], dest: 'build/libs'
                         },
                     ],
                 },
@@ -41,7 +41,7 @@
         // custom tasks        
         grunt.registerTask('make-index-file', function () {
             var file = grunt.file.read(__dirname + '\\src\\index.html');
-            grunt.file.write(__dirname + '\\build\\index.html', file.replace(/bower_components/g, 'lib'));
+            grunt.file.write(__dirname + '\\build\\index.html', file.replace(/bower_components/g, 'libs'));
         })
 
     }
