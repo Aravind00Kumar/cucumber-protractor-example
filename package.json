@@ -1,0 +1,44 @@
+{
+  "name": "cucumber-protractor-example",
+  "version": "1.0.0",
+  "description": "An example to write acceptance tests for angularjs 1.x application using protractor and cucumberjs",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aravind00Kumar/cucumber-protractor-example.git"
+  },
+  "keywords": [
+    "cucumber-protractor",
+    "grunt-cucumber-protractor",
+    "grunt-protractor-cucumber",
+    "protractor-cucumberjs",
+    "angularjs",
+    "cucumberjs",
+    "angularjs",
+    "cucumberjs",
+    "protractor",
+    "angularjs",
+    "protractor",
+    "cucumberjs",
+    "angularjs",
+    "cucumberjs",
+    "protractor",
+    "example"
+  ],
+  "author": "Aravind Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aravind00Kumar/cucumber-protractor-example/issues"
+  },
+  "homepage": "https://github.com/Aravind00Kumar/cucumber-protractor-example#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-protractor-runner": "^3.2.0"
+  }
+}
