@@ -28,15 +28,37 @@
                     }
                 }
             },
+            protractor: {
+                options: {
+                    keepAlive: false,
+                },
+                testTargetConfigFile: {
+                    //configFile: "tests/e2e/config/protractor.config.js",
+                    configFile: "tests/features/config/protractor.config.js",
+                    args: {
+                        baseUrl: 'http://localhost:3000/'
+                    }
+                },
+            },
+            debug: {
+                options: {
+                    open: true // do not open node-inspector in Chrome automatically 
+                }
+            },
         });
 
         grunt.loadNpmTasks('grunt-contrib-clean');
         grunt.loadNpmTasks('grunt-contrib-copy');
         grunt.loadNpmTasks('grunt-express');
+        grunt.loadNpmTasks('grunt-protractor-runner');
+        grunt.loadNpmTasks('grunt-debug-task');
 
 
-        grunt.registerTask('start-server', ['express', 'express-keepalive']);
         grunt.registerTask('default', ['clean', 'copy', 'make-index-file']);
+        grunt.registerTask('start-server', ['express', 'express-keepalive']);
+        grunt.registerTask('run-e2e', [
+            'express',
+            'protractor']);
 
         // custom tasks        
         grunt.registerTask('make-index-file', function () {

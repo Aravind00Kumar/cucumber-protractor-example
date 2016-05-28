@@ -7,7 +7,7 @@
             "request": "launch",
             "program": "${workspaceRoot}/node_modules/grunt/bin/grunt",
             "stopOnEntry": true,
-            "args": ["make-index-file"],
+            "args": ["run-e2e"],
             "cwd": "${workspaceRoot}",
             "preLaunchTask": null,
             "runtimeExecutable": null,

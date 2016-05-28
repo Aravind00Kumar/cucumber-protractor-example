@@ -35,10 +35,13 @@
   },
   "homepage": "https://github.com/Aravind00Kumar/cucumber-protractor-example#readme",
   "devDependencies": {
+    "cucumber": "^0.10.3",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-debug-task": "^0.1.8",
     "grunt-express": "^1.4.1",
-    "grunt-protractor-runner": "^3.2.0"
+    "grunt-protractor-runner": "^3.2.0",
+    "protractor-cucumber-framework": "^0.5.0"
   }
 }
