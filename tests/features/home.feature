@@ -5,16 +5,13 @@ Feature: Homepage
   
 #################################################
 
-Scenario: Home page should have navigation links
+Scenario Outline: Home page should have navigation links
     Given I am on the homepage
     Then I should see navigation bar
-    And I should see a "home" link
-    And I should see a "about" link
+    And I should see a <title> link at <count>
+    Examples:
+    | count |  title  | 
+    |   1   |  Home  |
+    |   2   |  About | 
 
-#################################################
-
-Scenario: Home page should have title
-    Given I am on the homepage
-    Then I should see a title on it
-    
 #################################################

@@ -14,18 +14,18 @@ exports.config = {
         require: '../step_definitions/*_steps.js',
         format: 'pretty'
     },
-    multiCapabilities: [{
-        browserName: 'chrome',
-        chromeOptions: {
-            args: ['--test-type']
-        }
-    }],
+    // multiCapabilities: [{
+    //     browserName: 'chrome',
+    //     chromeOptions: {
+    //         args: ['--test-type']
+    //     }
+    // }],
     
-    // capabilities: {
-    //     'browserName': 'phantomjs',
-    //     'phantomjs.binary.path': path.join(__dirname, "../../../bin/phantomjs.exe"),
-    //     'phantomjs.cli.args': ['--ignore-ssl-errors=true', '--web-security=false'],
-    //     'phantomjs.ghostdriver.cli.args': ['--loglevel=DEBUG']
-    // }
+    capabilities: {
+        'browserName': 'phantomjs',
+        'phantomjs.binary.path': path.join(__dirname, "../../../bin/phantomjs.exe"),
+        'phantomjs.cli.args': ['--ignore-ssl-errors=true', '--web-security=false'],
+        'phantomjs.ghostdriver.cli.args': ['--loglevel=DEBUG']
+    }
 
 }
