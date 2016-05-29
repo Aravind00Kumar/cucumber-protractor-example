@@ -1,7 +1,7 @@
 {
   "name": "cucumber-protractor-example",
   "version": "1.0.0",
-  "description": "An example to write acceptance tests for angularjs 1.x application using protractor and cucumberjs",
+  "description": "An angularjs 1.x sample project with acceptance tests using protractor and cucumberjs",
   "main": "gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

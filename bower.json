@@ -1,6 +1,6 @@
 {
   "name": "cucumber-protractor-example",
-  "description": "An example to write acceptance tests for angularjs 1.x application using protractor and cucumberjs",
+  "description": "An angularjs 1.x sample project with acceptance tests using protractor and cucumberjs",
   "main": "gruntfile.js",
   "authors": [
     "Aravind Kumar"
