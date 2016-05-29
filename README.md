@@ -18,3 +18,5 @@ An angularjs 1.x sample project with acceptance tests using protractor and cucum
 
 ## References
     http://docs.behat.org/en/v3.0/#guides
+    **gherkin editor
+    https://chrome.google.com/webstore/detail/tidy-gherkin/nobemmencanophcnicjhfhnjiimegjeo?utm_source=chrome-app-launcher-info-dialog
