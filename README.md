@@ -3,13 +3,15 @@ An example to write acceptance tests for angularjs 1.x application using protrac
 
 ## Prerequisites
    * Visual Studio Code Editor
-   * npm install cucumber grunt-cli bower
+    
+    npm install cucumber grunt-cli bower -g
 
 
 ## Setup
     npm clone https://github.com/Aravind00Kumar/cucumber-protractor-example.git
     npm install
     bower install
+    
     grunt run-e2e
 ##
 

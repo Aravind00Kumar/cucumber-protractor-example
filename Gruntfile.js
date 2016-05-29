@@ -51,14 +51,12 @@
         grunt.loadNpmTasks('grunt-contrib-copy');
         grunt.loadNpmTasks('grunt-express');
         grunt.loadNpmTasks('grunt-protractor-runner');
-        grunt.loadNpmTasks('grunt-debug-task');
 
-
-        grunt.registerTask('default', ['clean', 'copy', 'make-index-file']);
+        grunt.registerTask('new', ['clean', 'copy', 'make-index-file']);
+        
         grunt.registerTask('start-server', ['express', 'express-keepalive']);
-        grunt.registerTask('run-e2e', [
-            'express',
-            'protractor']);
+        
+        grunt.registerTask('default', ['new','express','protractor']);
 
         // custom tasks        
         grunt.registerTask('make-index-file', function () {
